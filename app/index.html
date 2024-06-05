@@ -263,7 +263,8 @@
     }
     firstTimeVisit()
     if (navigator.onLine) {
-      var translateUrl = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+      //var translateUrl = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+      var translateUrl = "https://foo.example.com/"
       $.getScript(translateUrl)
         .done(function(script, textStatus) {
           console.debug(textStatus)
